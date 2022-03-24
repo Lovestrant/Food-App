@@ -6,14 +6,13 @@ class IconAndText extends StatelessWidget {
   double size;
   final String text;
   final Color iconColor;
-  final Color textColor;
 
   IconAndText({Key? key,
    required this.icon,
     this.size = 13,
     required this.text,
     required this.iconColor,
-    required this.textColor
+
   }) : super(key: key);
 
   @override
@@ -22,7 +21,7 @@ class IconAndText extends StatelessWidget {
       children: [
         Icon(icon, color: iconColor,size: size,),
         SizedBox(width: 5),
-        SmallText(text: text, color: textColor,size: size,)
+        SmallText(text: text, size: size,)
       ],
     );
   }
